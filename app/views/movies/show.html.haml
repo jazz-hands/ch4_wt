@@ -1,0 +1,16 @@
+%h1 More Details: #{@movie.title}
+
+%table#movie
+  %thead
+    %tr
+      %th Movie Title
+      %th Rating
+      %th Release Date
+      %th Go Back
+    %tbody
+      %tr
+        %td= @movie.title
+        %td= @movie.rating
+        %td= @movie.release_date
+        %td= link_to "Back to all movies", movies_url
+          
