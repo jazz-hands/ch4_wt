@@ -7,4 +7,8 @@ class MoviesController < ApplicationController
   id = params[:id]
   @movie = Movie.find(id)
   end
+  
+  def new
+    @moive = Movie.new
+  end
 end
